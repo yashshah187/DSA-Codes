@@ -4,10 +4,7 @@ class Solution {
         for(int x:stones) p.add(x);
         while(p.size()>1)
         {
-            int f=p.poll();
-            int s=p.poll();
-            System.out.println(f+" "+s);
-            p.add(Math.abs(f-s));
+            p.add(Math.abs(p.poll()-p.poll()));
         }
         
         return p.poll();
