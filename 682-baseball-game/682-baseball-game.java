@@ -5,8 +5,7 @@ class Solution {
         {
             switch(s)
             {
-                case "C":int size=list.size()-1;
-                         list.remove(size);
+                case "C":list.remove(list.size()-1);
                          break;
                 case "D":list.add(list.get(list.size()-1)*2);
                          break;
