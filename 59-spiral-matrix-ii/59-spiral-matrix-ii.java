@@ -14,17 +14,13 @@ class Solution {
                 matrix[rowStart][i]=temp++;
             }
             rowStart++;
-            
-             if(rowStart>rowEnd) break;
-            
-            
+            if(rowStart>rowEnd) break;
             for(int i=rowStart;i<=rowEnd;i++)
             {
                 matrix[i][colEnd]=temp++;
             }
             colEnd--;
-            
-           if(colStart>colEnd) break;
+            if(colStart>colEnd) break;
             
             for(int i=colEnd;i>=colStart;i--)
             {
