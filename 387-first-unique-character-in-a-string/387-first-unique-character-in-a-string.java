@@ -4,7 +4,7 @@ class Solution {
         char c='0';
         for(int i=0;i<s.length();i++)
         {
-            if(i==s.lastIndexOf(s.charAt(i)) &&  !set.contains(s.charAt(i)))
+            if(!set.contains(s.charAt(i)) && i==s.lastIndexOf(s.charAt(i)) )
             {
                 return i;   
             }
