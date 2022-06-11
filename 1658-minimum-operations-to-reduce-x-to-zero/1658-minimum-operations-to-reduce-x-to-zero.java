@@ -11,7 +11,13 @@ class Solution {
             while(sum<target && right<n) 
               sum+=nums[right++];
             
-            if(sum==target) max_length=Math.max(max_length,right-i);
+            
+            if(sum==target)
+            {
+             max_length=Math.max(max_length,right-i);
+            System.out.println(max_length);
+            }
+            
             sum-=nums[i];
         }
         
