@@ -35,7 +35,6 @@ class Solution {
                 q.offer(temp.left);
                 
             }
-            
             if(temp.right!=null)
             {
                 q.offer(temp.right);
