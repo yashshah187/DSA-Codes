@@ -1,39 +1,30 @@
 class Solution {
     public String reverseWords(String s) {
         Stack<String> stack=new Stack<>();
-        String temp="";
-        for(char c:s.toCharArray())
+        String[] temp=s.split(" ");
+        
+        for(String c:temp)
         {
-            if(c!=' ')
+            if(!c.equals(""))
             {
-              temp+=c;
-            }
-
-            if(c==' ')
-            {
-                if(temp!="")
-                {
-                    stack.push(temp);
-                    temp="";
-                }
-                
+                stack.push(c);
+                System.out.println(stack);
             }
         }
         
-      if(temp!="")
-      {
-           stack.push(temp);
-           temp="";
-        }
+        
+        
+        String ans="";
         
         while(!stack.isEmpty())
         {
-            temp+=stack.pop();
+            ans+=stack.pop();
             
             if(stack.size()!=0)
-            temp+=" ";
+            ans+=" ";
         }
         
-        return temp;
+        return ans;
+        
     }
 }
