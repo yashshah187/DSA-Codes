@@ -8,11 +8,8 @@ class Solution {
             if(!c.equals(""))
             {
                 stack.push(c);
-                System.out.println(stack);
             }
         }
-        
-        
         
         String ans="";
         
