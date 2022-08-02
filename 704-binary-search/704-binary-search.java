@@ -5,7 +5,7 @@ class Solution {
     
     public int binary(int[] nums,int l,int r,int target)
     {
-        int mid=(l+r)/2;
+        int mid= l+(r-l)/2;
         if(nums[mid]<target)
         {
             if(l<r)
